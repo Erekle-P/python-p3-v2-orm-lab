@@ -34,7 +34,7 @@ class Department:
 
     @location.setter
     def location(self, location):
-        if isinstance(location, str) and len(location):
+        if isinstance(location, str) and len(location) > 0:
             self._location = location
         else:
             raise ValueError(
